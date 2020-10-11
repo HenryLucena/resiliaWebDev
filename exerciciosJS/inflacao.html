@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function mostra(frase) {
+            document.write(frase +"<br>")
+        }
+        
+        function calculaInflacaoMedia (valorInicial, valorFinal, dataInicial, dataFinal) {
+
+            var valor = valorFinal - valorInicial;
+            var data = dataFinal - dataInicial ;
+            var inflacao = valor / data ;
+            return inflacao
+        }
+
+        function inflacaoAcumulada(valorInicial, valorFinal) {
+            var valor = valorFinal - valorInicial;
+            return valor
+        }
+
+
+        var inflacaoMediaTomate = calculaInflacaoMedia(3.30, 4.70, 24, 30);
+        var inflacaoMediaArroz = calculaInflacaoMedia(2.99, 3.25, 24, 30) ;
+        var inflacaoMediaCenoura = calculaInflacaoMedia(3.99, 4.14, 24, 30) ; 
+
+        var inflacaoAcumuladaArroz = inflacaoAcumulada(2.99, 3.25);
+        var inflacaoAcumuladaTomate = inflacaoAcumulada(3.30, 4.70);
+        var inflacaoAcumuladaCenoura = inflacaoAcumulada(3.99, 4.14);
+
+        mostra("A inflação diaria media do tomate é de R$: " + inflacaoMediaTomate.toFixed(2))
+        mostra("A inflação acumulada o tomate é de R$: " + inflacaoAcumuladaTomate.toFixed(2) + "<br>")
+
+        mostra("A inflação diaria media do arroz é de R$: " + inflacaoMediaArroz.toFixed(2))
+        mostra("A inflação acumulada do arroz é de R$: " + inflacaoAcumuladaArroz.toFixed(2) +"<br>")
+
+        mostra("A inflação diaria média da cenoura é de R$: " + inflacaoMediaCenoura.toFixed(2))
+        mostra("A inflação acumulada da cenoura é de R$: " + inflacaoAcumuladaCenoura.toFixed(2) + "<br>")
+
+        mostra("A inflação média diaria de todos os produtos é de R$: " +
+            ((inflacaoMediaArroz + inflacaoMediaCenoura + inflacaoMediaTomate) / 3).toFixed(2))
+        mostra("A inflação acumulada de todos os produtos é de R$: " +
+            (inflacaoAcumuladaArroz + inflacaoAcumuladaCenoura + inflacaoAcumuladaTomate).toFixed(2) )
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        function string(a, b) {
+            return a + " " + b
+        }
+
+        function saudacao(nome) {
+
+            return "Olá " + nome + ". <br>"
+            return "Tudo bem " + nome + "?"
+
+        }
+
+        function resto(x) {
+
+            var resultado = x % 9;
+            return "O resto de " + x + " dividos por 9 é: " + resultado
+        }
+
+        function motorista(idade, idadePermitida) {
+            if (idade < idadePermitida) {
+                return "Você não está autorizado a dirigir"
+            }
+
+            else {
+                return "Você está autorizado a dirigir"
+            }
+        }
+
+        function bebedeira(idade, idadePermitida) {
+            if (idade < idadePermitida) {
+                return "Você não pode beber"
+            }
+
+            else {
+                return "Você pode beber"
+            }
+        }
+
+        function semaforo(cor) {
+
+            if (cor == "verde") {
+                return "Você pode passar!"
+            }
+
+            if (cor == "amarelo") {
+                return "Melhor freiar"
+
+            }
+
+            if (cor == "vermelho") {
+                return "Pare já!"
+            }
+
+        }
+
+        function mostraMenu() {
+            return "Escolha seu item \n1 - Refrigerante \n2- Suco \n3- Água"
+        }
+
+        function selecao() {
+            var escolha = prompt("Faça sua escolha: \n1 - Refrigerante\n 2- Suco\n 3- Água")
+
+            if (escolha == "Refrigerante") {
+                return "Você escolheu o refrigerante"
+            }
+            if (escolha == "Suco") {
+                return "Você escolheu o suco"
+            }
+            if (escolha == "Agua") {
+                return "Você escolheu a água"
+            } else {
+                return "Item não disponível no menu"
+            }
+
+        }
+
+        function selecao2() {
+
+            var escolha = prompt("Escolha a sua opção pelo número do item \n 1 - Refrigerante\n 2- Suco\n 3- Água")
+
+            if (escolha == "1") {
+                return "Você escolheu o refrigerante"
+            }
+            if (escolha == "2") {
+                return "Você escolheu o suco"
+            }
+            if (escolha == "3") {
+                return "Você escolheu a água"
+            } else {
+                return "Item não disponível no menu"
+            }
+        }
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

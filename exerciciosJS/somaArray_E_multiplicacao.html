@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        var lista2 = [3, 2, 1]
+        var lista1 = [1, 2, 3]
+
+        function somaArray(arr1, arr2) {
+
+            var soma = 0, soma2 = 0;
+
+            for (i = 0; i < arr1.length; i++) {
+
+                soma += arr1[i]
+            }
+
+            for (i = 0; i < arr2.length; i++) {
+
+                soma2 += arr2[i]
+            }
+
+            return soma + soma2
+
+        }
+
+        function multiplica(num)  {
+            var valor = 0;
+
+            for (i = 0; i < num; i++) {
+                if (i % 3 === 0 || i % 5 === 0) {
+                    valor += i
+                } else if (i < 0) {
+                    return 'Valor inválido'
+                }
+            }
+
+            return valor
+        }
+
+
+
+    </script>
+</body>
+
+</html>
