@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        #divButton {
+            width: 50%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+    <div id="divButton">
+        <button type="button" onclick="createButton()">Criar botões</button>
+    </div>
+    <script>
+
+        function createButton() {
+
+            for (let i = 0; i < 20; i++) {
+                var btn = document.createElement("button")
+                var text = document.createTextNode("Botão número: " + i)
+                btn.appendChild(text)
+                
+                document.getElementById("divButton").appendChild(btn)
+            }
+
+        }
+    </script>
+</body>
+
+</html>
