@@ -1,0 +1,23 @@
+header {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.tituloArtigo {
+    font-weight: bold;
+    padding: 10px;
+}
+
+footer {
+    text-align: center;
+    font-size: 15px;
+}
+
+.imagemPrincipal {
+    width: 70%;
+}
