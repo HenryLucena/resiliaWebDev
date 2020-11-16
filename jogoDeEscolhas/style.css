@@ -11,14 +11,31 @@ body {
 .titulo {
     display: flex;
     align-items: center;
+    text-transform: bold;
+    font-size: 50px;
 }
 
-main {
+
+.container {
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
+    width: 80%;
+    height: 150px;
+    margin: 0 auto;
+    text-align: center;
     justify-content: space-around;
-    align-items: center;
-    height: 200px;
+}
+
+.textBox {
+
+    font-size: 20px;
+
+}
+
+.button1, .button2 {
+    border: solid 2px black;
+    border-radius: 5px;
+    font-size: 15px;
 }
 
 .button2 {
