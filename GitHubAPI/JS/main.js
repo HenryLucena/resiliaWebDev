@@ -1,7 +1,10 @@
-let teste = document.querySelector('#formBusca')
+let form = document.querySelector('#formBusca')
 
-teste.addEventListener('submit', function(event){
+form.addEventListener('submit', function(event){
     event.preventDefault()
+    let divRepo = document.querySelector('#exibeRepositorio')
+
+    divRepo.innerHTML = "";
 
     let entrada = document.querySelector('#procurarUsuario')
 
