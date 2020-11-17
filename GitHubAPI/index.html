@@ -1,31 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto GitHub API</title>
-    
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
 
-    <form id="formBusca">
-        <input type="text" id="procurarUsuario">
-        <button type="submit" id='btn'>Pesquisar Usuario</button>
-    </form>
-
-    <div class="exibeUsuario">
-        <h3 class="nomeUsuario" id="nomeUsuario"></h3>
-        <img class="imagemUsuario" id="imagemUsuario">
-    </div>
-
-    <div class="exibeRepositorio" id="exibeRepositorio">
-
+    <div class="container">
+        <img src="github_PNG15.png" class="gitPNG">
+        <form id="formBusca">
+            <input type="text" id="procurarUsuario" name="procura">
+            <button type="submit" id='btn'>Pesquisar Usuario</button>
+        </form>
     </div>
 
 
+    <div class="exibicao">
+        
+        <div class="exibeUsuario">
+            <img class="imagemUsuario" id="imagemUsuario">
+            <h2 class="nomeUsuario" id="nomeUsuario"></h2>
+        </div>
 
+        <div class="exibeRepositorio" id="exibeRepositorio">
 
-
+        </div>
+    </div>
 
 
     <script src="JS/ModelUsuario.js"></script>
@@ -34,4 +39,5 @@
     <script src="JS/View.js"></script>
     <script src="JS/main.js"></script>
 </body>
+
 </html>

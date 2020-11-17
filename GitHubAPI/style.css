@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 50px;
+}
+
+#btn{
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+.gitPNG {
+    flex-basis: 400px;
+}
+
+.exibicao {
+    display: flex;
+}
+
+.exibeRepositorio {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.exibeRepositorio ul {
+    width: 40%;
+}
+
