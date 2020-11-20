@@ -1,23 +1,21 @@
 header {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-main {
+.inputData {
     display: flex;
-    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.exibicao {
+    display: flex;
+    align-items: center;
     flex-direction: column;
 }
 
-.tituloArtigo {
-    font-weight: bold;
-    padding: 10px;
-}
-
-footer {
-    text-align: center;
-    font-size: 15px;
-}
-
-.imagemPrincipal {
-    width: 70%;
+.dataC {
+    margin: 10px;
 }

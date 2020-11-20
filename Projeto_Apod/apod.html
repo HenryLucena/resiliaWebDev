@@ -6,9 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>APOD</title>
   <link rel='stylesheet' href='apod.css'>
-  <script defer src="apod/apodModel.js"></script>
-  <script defer src="apod/apodViwer.js"></script>
-  <script defer src="apod/apodController.js"></script>
+  <script defer src="apod/Model.js"></script>
+  <script defer src="apod/Viewer.js"></script>
+  <script defer src="apod/Controller.js"></script>
+  <script defer src="main.js"></script>
+
 </head>
 
 <body>
@@ -18,22 +20,26 @@
     <p>Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along
       with a brief explanation written by a professional astronomer. </p>
   </header>
+
   <main>
+    <form class="inputData" id="inputData">
+      <label for="escolhaData">Escolha uma data e veja a imagem do dia</label>
+      <input type="date" id="data" name="escolhaData" class="dataC">
+      <button type='submit' id="btnData">Pesquisar</button>
+    </form>
 
-    <p id='data' class="data"></p>
+    <div class="exibicao" id="exibicao">
+      <p class="dataAtual" id="dataAtual"></p>
 
-    <a href="" id='linkImg'>
-      <img src='' id="imagemPrincipal" class="imagemPrincipal">
-    </a>
+      <img id="astronomicPic" src="">
 
-    <div id='tituloArtigo' class="tituloArtigo"></div>
-
-    <div id='explanation' class="explanation"></div>
+      <p class="tituloImg" id="tituloImg"></p>
+      <p class="copyright" id="copy"></p>
+      <p class="explicacao" id="explicacao"></p>
+    </div>
   </main>
 
-  <footer>
-    <p>Desenvolvido por Henry &#169 2020</p>
-  </footer>
+
 
 </body>
 
